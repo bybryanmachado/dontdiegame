@@ -2,9 +2,9 @@
     Dim score As Integer
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
-        PictureBox1.Top -= 5
-        PictureBox2.Top -= 5
-        PictureBox3.Top -= 5
+        PictureBox1.Top -= 10
+        PictureBox2.Top -= 10
+        PictureBox3.Top -= 10
     End Sub
 
     Private Sub Timer2_Tick(ByVal sender As System.Object, e As System.EventArgs) Handles Timer2.Tick
@@ -34,4 +34,7 @@
         Label1.Text = score
         PictureBox2.Location = New Point(200, 700)
     End Sub
+
+
+
 End Class
