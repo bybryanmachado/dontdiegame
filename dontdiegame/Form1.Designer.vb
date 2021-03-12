@@ -31,7 +31,7 @@ Partial Class Form1
         '
         Me.btnStart.Font = New System.Drawing.Font("Gill Sans Ultra Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStart.ForeColor = System.Drawing.Color.Olive
-        Me.btnStart.Location = New System.Drawing.Point(290, 181)
+        Me.btnStart.Location = New System.Drawing.Point(355, 200)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(124, 32)
         Me.btnStart.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class Form1
         '
         Me.btnExit.Font = New System.Drawing.Font("Gill Sans Ultra Bold", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.Olive
-        Me.btnExit.Location = New System.Drawing.Point(290, 239)
+        Me.btnExit.Location = New System.Drawing.Point(355, 258)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(124, 32)
         Me.btnExit.TabIndex = 1
@@ -54,11 +54,11 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Gill Sans Ultra Bold", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(122, 110)
+        Me.Label1.Location = New System.Drawing.Point(202, 129)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(154, 42)
+        Me.Label1.Size = New System.Drawing.Size(430, 42)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Dunkey"
+        Me.Label1.Text = "Destroy All Spaceships"
         '
         'Form1
         '

@@ -27,10 +27,10 @@ Partial Class Form2
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.thePlayerSprite = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.thePlayerSprite, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,15 +61,15 @@ Partial Class Form2
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
-        'PictureBox2
+        'thePlayerSprite
         '
-        Me.PictureBox2.Image = Global.dontdiegame.My.Resources.Resources.spaceship
-        Me.PictureBox2.Location = New System.Drawing.Point(504, 278)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(63, 87)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.thePlayerSprite.Image = Global.dontdiegame.My.Resources.Resources.spaceship
+        Me.thePlayerSprite.Location = New System.Drawing.Point(504, 278)
+        Me.thePlayerSprite.Name = "thePlayerSprite"
+        Me.thePlayerSprite.Size = New System.Drawing.Size(63, 87)
+        Me.thePlayerSprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.thePlayerSprite.TabIndex = 1
+        Me.thePlayerSprite.TabStop = False
         '
         'PictureBox1
         '
@@ -89,12 +89,12 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.thePlayerSprite)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form2"
         Me.Text = "Form2"
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.thePlayerSprite, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -102,7 +102,7 @@ Partial Class Form2
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents thePlayerSprite As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer

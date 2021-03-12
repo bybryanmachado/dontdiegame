@@ -2,13 +2,13 @@
     Dim score As Integer
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
-        PictureBox1.Top -= 10
-        PictureBox2.Top -= 10
-        PictureBox3.Top -= 10
+        PictureBox1.Top += 10
+        'thePlayerSprite.Top -= 10
+        PictureBox3.Top += 10
     End Sub
 
     Private Sub Timer2_Tick(ByVal sender As System.Object, e As System.EventArgs) Handles Timer2.Tick
-        If PictureBox1.Location.Y < -60 Or PictureBox2.Location.Y < -60 Or PictureBox3.Location.Y < -60 Then
+        If PictureBox1.Location.Y < -60 Or thePlayerSprite.Location.Y < -60 Or PictureBox3.Location.Y < -60 Then
             Me.Dispose()
             MsgBox("Game Over")
             Form1.Show()
@@ -29,12 +29,15 @@
         PictureBox3.Location = New Point(500, 400)
     End Sub
 
-    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
+    'the player:
+    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles thePlayerSprite.Click
         score = score + 1
         Label1.Text = score
-        PictureBox2.Location = New Point(200, 700)
+        thePlayerSprite.Location = New Point(200, 700)
     End Sub
 
-
-
+    Private Sub Form2_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
+        '
+        thePlayerSprite.Left += 10
+    End Sub
 End Class
