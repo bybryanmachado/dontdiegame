@@ -36,15 +36,18 @@
         thePlayerSprite.Location = New Point(200, 700)
     End Sub
 
-    Private Sub Form2_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
-
+    Private Sub Form2_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         'move player to the left
         If e.KeyCode = Keys.Left Then
-            thePlayerSprite.Left += 10
+            thePlayerSprite.Left -= 10
             'move player to the right
         ElseIf e.KeyCode = Keys.Right Then
-            thePlayerSprite.Left -= 10
+            thePlayerSprite.Left += 10
+        ElseIf e.KeyCode = Keys.Up Then
+            thePlayerSprite.Top -= 10
+        ElseIf e.KeyCode = Keys.Down Then
+            thePlayerSprite.Top += 10
         End If
-
     End Sub
+
 End Class
