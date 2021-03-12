@@ -43,7 +43,7 @@
             thePlayerSprite.Left += 10
             'move player to the right
         ElseIf e.KeyCode = Keys.Right Then
-            thePlayerSprite.Left += 10
+            thePlayerSprite.Left -= 10
         End If
 
     End Sub
